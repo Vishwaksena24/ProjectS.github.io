@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family:monospace;
+            
+        }
+        .container{
+            background-color: rgb(95, 94, 95);
+            position:relative;
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+        }
+        #na{
+            position: relative;
+            background-image: linear-gradient(to right,rgb(49, 201, 206),pink);
+            height: 50vh;
+            width: 30vh;
+            margin-top: 10px; 
+            margin-bottom: 15px;
+            border-radius: 15px;
+            transition: 0.5s;
+            
+        }
+        
+        #na:hover{
+            transform: scale(1.1);
+            box-shadow: 10px 10px 13px 0 black;
+        }
+
+        h1{
+            position: absolute;
+            font-size: 20px;
+            font-weight: 400;
+            letter-spacing: 2px;
+            bottom: 0;
+            text-align: center;
+            color:white
+            
+        }
+        button a{
+            position: absolute;
+            text-decoration: none;
+            top: 0;
+            right: 0;
+            margin: 20px;
+            padding: 10px;
+            border-radius: 15px ;
+            border: 2px solid gray;
+            background-color: rgb(231, 135, 8);
+            transition: 0.5s;
+        }
+        button a:hover{
+            transform: scale(1.2);
+        }
+        
+        
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <a href="product/choco.html" id="na"> 
+            <div class="ch">
+                <h1>Chocolate</h1>
+            </div>
+        </a>
+        <a href="product/fancyy.html" id="na">
+            <div class="fa">
+                <h1>fancy</h1>
+            </div>
+        </a>
+        <a href="product/toy.html" id="na">
+            <div class="toy">
+                <h1>Toys</h1>
+            </div>
+        </a>
+        <button>
+            <a href="navibar.html">Back</a>
+        </button>
+    </div>
+    
+</body>
+</html>
